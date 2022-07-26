@@ -5,11 +5,11 @@ Commands:
 
       npm init -y
      
-      docker build -t hello-api
+      docker build -t node-hi-api
 
       kind create cluster --name test-cluster --config ./nodes.yaml
       
-      kind load docker-image hello-api --name test-cluster
+      kind load docker-image node-hi-api --name test-cluster
       
       kubectl apply -f ./deployment-api.yaml
       
